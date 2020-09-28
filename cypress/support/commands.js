@@ -23,3 +23,25 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+
+Cypress.Commands.add("login", (email, pass) => {
+    cy.visit("/login");
+    cy.get(':nth-child(1) > .value').type(email);
+    cy.get(':nth-child(2) > .value').type(password);
+    cy.get("button[type='submit']").click();
+});
+
+Cypress.Commands.add("loginByCSRF", (email, password, csrfToken) => {
+    cy.request({
+        method: "POST",
+        url: "/login",
+        form: true,
+        followRedirect: true,
+        body: {
+            ':nth-child(1) > .value': email,
+            ':nth-child(2) > .value': pass,
+            "form[_token]": csrfToken
+        }
+    });
+});

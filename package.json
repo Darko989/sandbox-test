@@ -1,5 +1,5 @@
 {
-  "name": "yes",
+  "name": "sandbox-test",
   "version": "1.0.0",
   "description": "testing",
   "main": "index.js",
@@ -15,7 +15,7 @@
   "keywords": [
     "test"
   ],
-  "author": "Darko",
+  "author": "Darko Djordjevic",
   "license": "MIT ",
   "bugs": {
     "url": "https://github.com/Darko989/sandbox-test/issues"
