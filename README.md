@@ -10,6 +10,8 @@ Installation
 
 First clone repo from the github repositorium to the local machine.
 
+All changes are pushed to the feature/create-sandbox-test branch and not merged to master.
+
 ### Cypress install
 
 macOS 10.9 and above (64-bit only)
@@ -42,12 +44,7 @@ yarn run cypress open
 
 ### Running the tests
 
-After cypress is up find UI and API test and just by clicking, tests are running
+After cypress is up find UI and API tests and just by clicking, tests are running
 
-use this command to run entire tests
-
-npx cypress run cypress/integration/api/**/*
-
-npx cypress run cypress/integration/ui/**/*
 
 
