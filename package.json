@@ -1,12 +1,16 @@
 {
-  "name": "yes",
+  "name": "sandbox-test",
   "version": "1.0.0",
   "description": "testing",
   "main": "index.js",
   "dependencies": {
+    "chai-json-pattern": "^1.1.0",
     "cypress": "^5.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai-match-pattern": "^1.2.0",
+    "cypress-localstorage-commands": "^1.2.2"
+  },
   "scripts": {},
   "repository": {
     "type": "git",
@@ -15,7 +19,7 @@
   "keywords": [
     "test"
   ],
-  "author": "Darko",
+  "author": "Darko Djordjevic",
   "license": "MIT ",
   "bugs": {
     "url": "https://github.com/Darko989/sandbox-test/issues"
